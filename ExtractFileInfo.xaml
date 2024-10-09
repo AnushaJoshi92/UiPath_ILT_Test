@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractFileInfo" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1150,1262" sap2010:WorkflowViewState.IdRef="ExtractFileInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExtractFileInfo" sap:VirtualizedContainerService.HintSize="579.9999999999999,2418" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Firefox: Resources" sap:VirtualizedContainerService.HintSize="502,2395.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" ScopeGuid="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,2153.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_rpafiles" />
+              <Variable x:TypeArguments="x:String" Name="file_name" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Sign in'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Text="anusha.chandrakanth@accordion.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/ed9e49cb-59b0-45fe-b350-838ce3d8380d/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;response%5Fmode=form%5Fpost&amp;response%5Ftype=code%20id%5Ftoken&amp;resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;scope=openid&amp;nonce=2F2E12A26A42AB665FBFE77B7E7825008C5E27C8C7B4D557%2DEB0469054C39E5D323C0088A98E7AFA051CD22EDE4577B8197CADAD6261891B1&amp;redirect%5Furi=https%3A%2F%2Faccordionpartnersnyc%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&amp;state=OD0w&amp;claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;wsucxt=1&amp;cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&amp;client%2Drequest%2Did=dea257a1%2D0066%2D6000%2D9756%2Dfc1843a00206" DesignTimeRectangle="710, 478, 522, 54" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl id='i0116' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='i0116' tag='INPUT' type='email' class='form-control ltr_override input ext-input text-box ext-text-box' aaname='' /&gt;" Guid="9fa40eda-a98f-44e9-9617-0f34680b1a4e" InformativeScreenshot="342be855f85446d05d52ddb2c288cce5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="707, 418, 528, 42" ElementType="Text" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Sign in' check:innerText='Sign in' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/ed9e49cb-59b0-45fe-b350-838ce3d8380d/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;response%5Fmode=form%5Fpost&amp;response%5Ftype=code%20id%5Ftoken&amp;resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;scope=openid&amp;nonce=2F2E12A26A42AB665FBFE77B7E7825008C5E27C8C7B4D557%2DEB0469054C39E5D323C0088A98E7AFA051CD22EDE4577B8197CADAD6261891B1&amp;redirect%5Furi=https%3A%2F%2Faccordionpartnersnyc%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&amp;state=OD0w&amp;claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;wsucxt=1&amp;cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&amp;client%2Drequest%2Did=dea257a1%2D0066%2D6000%2D9756%2Dfc1843a00206" DesignTimeRectangle="1073, 679, 162, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' type='submit' class='win-button button_primary button ext-button primary ext-primary' aaname='Next' check:text='Next' /&gt;" Guid="90e693e5-d209-4c3a-bbf5-4acdf4d57fa3" InformativeScreenshot="2613e36222f6e8780a3581de67e3307c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="905, 679, 162, 48" ElementType="Button" FriendlyName="'Back'" FullSelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' type='button' class='win-button button-secondary button ext-button secondary ext-secondary' aaname='Back' check:text='Back' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Enter password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Text="Sheela*1992" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/ed9e49cb-59b0-45fe-b350-838ce3d8380d/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;response%5Fmode=form%5Fpost&amp;response%5Ftype=code%20id%5Ftoken&amp;resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;scope=openid&amp;nonce=2F2E12A26A42AB665FBFE77B7E7825008C5E27C8C7B4D557%2DEB0469054C39E5D323C0088A98E7AFA051CD22EDE4577B8197CADAD6261891B1&amp;redirect%5Furi=https%3A%2F%2Faccordionpartnersnyc%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&amp;state=OD0w&amp;claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;wsucxt=1&amp;cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&amp;client%2Drequest%2Did=dea257a1%2D0066%2D6000%2D9756%2Dfc1843a00206" DesignTimeRectangle="710, 583, 522, 54" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT i0118'" FullSelectorArgument="&lt;webctrl id='i0118' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='i0118' tag='INPUT' type='password' class='form-control input ext-input text-box ext-text-box' aaname='' /&gt;" Guid="2151b4a5-0dbe-49ea-9469-d031bc376f71" InformativeScreenshot="b4783fd61b393bfc8dd13626655e5de4.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="707, 523, 528, 42" ElementType="Text" FriendlyName="'Enter password'" FullSelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Enter password' check:innerText='Enter password' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/ed9e49cb-59b0-45fe-b350-838ce3d8380d/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;response%5Fmode=form%5Fpost&amp;response%5Ftype=code%20id%5Ftoken&amp;resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&amp;scope=openid&amp;nonce=2F2E12A26A42AB665FBFE77B7E7825008C5E27C8C7B4D557%2DEB0469054C39E5D323C0088A98E7AFA051CD22EDE4577B8197CADAD6261891B1&amp;redirect%5Furi=https%3A%2F%2Faccordionpartnersnyc%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&amp;state=OD0w&amp;claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;wsucxt=1&amp;cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&amp;client%2Drequest%2Did=dea257a1%2D0066%2D6000%2D9756%2Dfc1843a00206" DesignTimeRectangle="1073, 730, 162, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' type='submit' class='win-button button_primary button ext-button primary ext-primary' aaname='Sign in' check:text='Sign in' /&gt;" Guid="3681bdee-84a7-4cfb-91c5-84498eb8f33e" InformativeScreenshot="adc110be189cdde580e843a3b6ffc02f.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="707, 523, 528, 42" ElementType="Text" FriendlyName="'Enter password'" FullSelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Enter password' check:innerText='Enter password' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/federation/OAuth2ClaimsProvider" DesignTimeRectangle="1073, 741, 162, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' type='submit' class='win-button button_primary button ext-button primary ext-primary' aaname='Yes' check:text='Yes' /&gt;" Guid="c37930c3-f525-4819-93ab-114e6e391082" InformativeScreenshot="667af0e97505446d1073556edb5cfb6e.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="905, 741, 162, 48" ElementType="Button" FriendlyName="'No'" FullSelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' type='button' class='win-button button-secondary button ext-button secondary ext-secondary' aaname='No' check:text='No' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Data Science'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accordionpartnersnyc.sharepoint.com/sites/KMMaven/SitePages/Resources.aspx" DesignTimeRectangle="157, 611, 375, 31" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Data Science'" FullSelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aria-label='Data Science, Folder' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tag='TABLE' /&gt;&lt;webctrl aria-label='Data Science, Folder' type='' tag='A' class='ms-listlink ms-draggable' aaname='Data Science' check:innerText='Data Science' /&gt;" Guid="67370890-9aef-4670-86b2-ae10c4986594" InformativeScreenshot="9c4a8974cd6148184a55f49aa3f15107.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resources' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="156, 569, 429, 25" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='LinkFilename' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tag='TABLE' /&gt;&lt;webctrl name='LinkFilename' type='' tag='DIV' class='ms-vh-div' aaname='' check:innerText='Name' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'RPA'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accordionpartnersnyc.sharepoint.com/sites/KMMaven/SitePages/Resources.aspx?RootFolder=%2Fsites%2FKMMaven%2FResources%2FData%20Science&amp;FolderCTID=0x012000C0D4B39FD9034A489D595AE432C04ACC&amp;View=%7BD4D40605%2DE560%2D44E9%2DA5E5%2D1F572FF577EA%7D" CvTextArea="156, 615, 43, 21" CvTextArgument="RPA" CvType="Text" DesignTimeRectangle="157, 611, 375, 31" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'RPA'" FullSelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aria-label='RPA, Folder' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tag='TABLE' /&gt;&lt;webctrl aria-label='RPA, Folder' type='' tag='A' class='ms-listlink ms-draggable' aaname='RPA' check:innerText='RPA' /&gt;" Guid="f418e3e4-8c61-48f0-a976-d7e96668a882" InformativeScreenshot="887a9177c1f35932b962a0f2fe9dc45e.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resources' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="155, 572, 48, 18" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="156, 571, 45, 21" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentname='LinkFilename' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tag='TABLE' /&gt;&lt;webctrl parentname='LinkFilename' type='' tag='A' class='ms-headerSortTitleLink' aaname='Name' check:innerText='Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_rpafiles]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='File Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Owner'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Updated Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Description'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column4' attr2='href'&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='a' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="d51b6d46-6c87-4621-bdea-a8edab3041f9" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://accordionpartnersnyc.sharepoint.com/sites/KMMaven/SitePages/Resources.aspx?RootFolder=%2Fsites%2FKMMaven%2FResources%2FData%20Science%2FRPA&amp;FolderCTID=0x012000C0D4B39FD9034A489D595AE432C04ACC&amp;View=%7BD4D40605%2DE560%2D44E9%2DA5E5%2D1F572FF577EA%7D" DesignTimeRectangle="60, 559, 1772, 312" DesignTimeScaleFactor="1.5" FriendlyName="'Name Owner'" FullSelectorArgument="&lt;webctrl id='onetidDoclibViewTbl0' parentid='scriptWPQ4' tableRow='1' tag='TABLE' /&gt;" Guid="8a1d276f-9ae1-4e0d-bdab-7da852ffbc84" InformativeScreenshot="c7f8b0f7e84143d11c235225623a3994.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resources' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteCsvFile AddHeaders="True" DataTable="[DT_rpafiles]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\anusha_chandrakanth\OneDrive - Merilytics\Desktop\RPA-ILT\Day 2_UiPath\Day 2_UiPath\RPA_Files.csv" sap:VirtualizedContainerService.HintSize="434,184.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Firefox" IconBase64="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///49+//h4MD/4eDA/+HgwP/h4MD/11ZDv+Rixf/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/6WiQv/p6ND//////+no0P+HgwP/h4MD/4eDA/+HgwP/XVkO/5GLF/+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/62qUv/p6ND/////////////////rapS/4eDA/+HgwP/h4MD/4eDA/9dWQ7/kYsX/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/h4MD/4eDA/+HgwP/h4MD/4eDA//LyZH/////////////////0tGh/56aMv+HgwP/h4MD/4eDA/+HgwP/h4MD/11ZDv+Rixf/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGs+HgwP/h4MD/4eDA/+HgwP/h4MD////////////2tiw/5aTI/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/VFEK/5GLF/+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsacIeDA/+HgwP/h4MD/4eDA/+HgwP///////////+0smL/h4MD/4eDA/+WkyP/paJC/4eDA/+HgwP/h4MD/4eDA/9GQwT/kYsX/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGt+hmxoQh4MD/4eDA/+HgwP/h4MD/4eDA//LyZH////////////w8OD/8PDg///////DwYH/h4MD/4eDA/+HgwP/h4MD/0E+Av92cQv/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxrvoZsaMAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+8uXH/4eDA//j37//49+//4eDA/62qUv+HgwP/h4MD/4eDA/+HgwP/QT4C/2VhA/+Cfgz/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa76GbGjAAAAAAAAAAAIeDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/9BPgL/ZWED/3BsA/95dQf/kowT/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa76GbGp+hmxoQAAAAAAAAAAAAAAAAh4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/0E+Av9lYQP/cGwD/3BsA/9wbAP/c28E/3x4Cf98eAn/hH8Mn6GbGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHgwPPh4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/96dgP/SEUC/2VhA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWEDcGVhA/9lYQP/ZWED/2VhA/9lYQP/ZWED/2VhA/9lYQP/ZWED/2VhA/9lYQP/Z2MD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwbAMwcGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwbAO/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA0BwbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA49wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA48AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA59wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAOfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA3BwbAPvcGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAPvcGwDcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsAxBwbAOAcGwDz3BsA/9wbAP/cGwD/3BsA/9wbAPPcGwDgHBsAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/8A///+AH///AA///gAH//4AB//+AAf//gAAP/4AAAwAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAHAAAAPwAAAH/4AAB/+AAAf/wAAP/8AAD//gAB//8AA///gAf//8AP/ygAAAAYAAAAMAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQxjeA0MY379DGN//Qxjf/0MY379DGN4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDGN8/Qxjf/0MY3/9DGN//Qxjf/0MY3/9DGN//QxjfPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0MY3gNDGN//Qxjf/0MY3/9DGN//Qxjf/0MY3/9DGN//Qxjf/0MY3gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0MY379DGN//Qxjf/0MY3/9DGN//Qxjf/0MY3/9DGN//Qxjf/0MY37wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIaGMb/2hjG/9oYxv/aGMb/2hjG/9oYxv/aGMb/3x2IP/Qxjf/0MY3/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHgwPvh4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/hYEF/2hjG//Qxjf/0MY3/6GbGv+hmxr/oZsa76GbGp+hmxogAAAAAAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/2hjG//Qxjf/zcM1/6GbGv+hmxr/oZsa/6GbGv+hmxrvoZsaMAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/2hjG//Qxjf/ubEp/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa76GbGiCHgwP/h4MD/4eDA/+HgwP/0tGh//////////////////Dw4P+emjL/h4MD/4eDA/+HgwP/h4MD/2hjG//HvjL/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGp+HgwP/h4MD/4eDA/+HgwP/2tiw/8vJkf+tqlL/y8mR///////h4MD/h4MD/4eDA/+HgwP/h4MD/1xYFP+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGu+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/paJC///////p6ND/h4MD/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+HgwP/h4MD/4eDA/+HgwP/h4MD/6WiQv/h4MD////////////LyZH/h4MD/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+HgwP/h4MD/4eDA/+HgwP/w8GB////////////6ejQ/7SyYv+HgwP/h4MD/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGu+HgwP/h4MD/4eDA/+HgwP/6ejQ//////+tqlL/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGp+HgwP/h4MD/4eDA/+HgwP/4eDA///////LyZH/rapS/8vJkf+0smL/h4MD/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxr/oZsa76GbGiCHgwP/h4MD/4eDA/+HgwP/npoy/+HgwP/////////////////DwYH/h4MD/4eDA/+HgwP/h4MD/09MDP+hmxr/oZsa/6GbGv+hmxr/oZsa/6GbGv+hmxrvoZsaMAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/zs5A/+PiRH/npgZ/6GbGv+hmxr/oZsa76GbGp+hmxogAAAAAAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/zw5Af9wbAP/cGwD/3BsA/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHgwPvh4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/hoID/3BsA/9wbAP/cGwD/3BsA/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcGwDr3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcGwDQHBsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA59wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwDjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwbAOPcGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAOfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcGwDQHBsA69wbAP/cGwD/3BsA/9wbAP/cGwDr3BsA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/gf///wD///4Af//+AH///AB//wAAA/8AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAH/AAAD/wAAP/8AAD//8AA///AAP//4AH///AD///4B//8oAAAAEAAAACAAAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQxjcw0MY3z9DGN//Qxjf/0MY3z9DGNzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQxjcQ0MY339DGN//Qxjf/0MY3/9DGN//Qxjff0MY3EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaGMbQGhjG/9oYxv/aGMb/2hjG/9oYxv/nJUp/9DGN0AAAAAAAAAAAAAAAAAAAAAAh4MD74eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/hYEF/2hjG/+tpiH/oZsa/6GbGt+hmxpQAAAAAIeDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/9oYxv/qqMf/6GbGv+hmxr/oZsa/6GbGlCHgwP/h4MD/4eDA//49+/////////////h4MD/h4MD/4eDA/+HgwP/XlkV/6GbGv+hmxr/oZsa/6GbGv+hmxrfh4MD/4eDA/+HgwP/tLJi/4+LE//DwYH//////56aMv+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsa/4eDA/+HgwP/h4MD/4+LE//DwYH/+Pfv//j37/+PixP/h4MD/4eDA/9QTQ3/oZsa/6GbGv+hmxr/oZsa/6GbGv+HgwP/h4MD/4eDA//p6ND//////9LRof+WkyP/h4MD/4eDA/+HgwP/UE0N/6GbGv+hmxr/oZsa/6GbGv+hmxrfh4MD/4eDA/+HgwP//////8vJkf+HgwP/tLJi/4eDA/+HgwP/h4MD/1BNDf+hmxr/oZsa/6GbGv+hmxr/oZsaUIeDA/+HgwP/h4MD/8vJkf////////////////+HgwP/h4MD/4eDA/9NSgz/oZsa/6GbGv+hmxrfoZsaUAAAAACHgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/PDkB/3BsA/9wbANAAAAAAAAAAAAAAAAAh4MD74eDA/+HgwP/h4MD/4eDA/+HgwP/h4MD/4eDA/+HgwP/hoID/3BsA/9wbAP/cGwDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsA99wbAP/cGwD/3BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwbAMwcGwD73BsA/9wbAP/cGwD/3BsA/9wbAP/cGwD73BsAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBsAzBwbAO/cGwD/3BsA/9wbAP/cGwDv3BsAzAAAAAAAAAAAAAAAAAAAAAAAAAAAPgfGv/wDxr/8A8a/wABGv8AABr/AAAa/wAAGv8AABr/AAAD/wAAA/8AAQP/AAcD/wAHA//gD0L/4A/A//Af//8=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="225dfe4abfcea44cd839577ede26f55d.png" Selector="&lt;html app='firefox.exe' title='Resources' /&gt;" Title="Resources" Url="https://accordionpartnersnyc.sharepoint.com/sites/KMMaven/SitePages/Resources.aspx" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
